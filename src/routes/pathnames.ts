@@ -1,6 +1,10 @@
-export const HOME = "/";
-export const LOGIN_PAGE = "/login";
-export const SIGNUP_PAGE = "/signup";
-export const MOVIES = "/movies";
-export const SERIES = "/series";
-export const BOOKMARKED = "/bookmark";
+export const MERCURY = "/mercury";
+export const VENUS = "/venus";
+export const EARTH = "/earth";
+export const MARS = "/mars";
+export const SATURN = "/saturn";
+export const URANUS = "/uranus";
+export const JUPITER = "/jupiter";
+export const NEPTUNE = "/neptune";
+export const PLUTO = "/pluto";
+export const PLANET = "/:planet";

@@ -7,10 +7,10 @@ export const TextStyle = {
   sizes: {},
   // styles for different visual variants ("outline", "solid")
   variants: {
-    mainText: {
-      fontSize: "15px",
-      fontWeight: "300",
-      lineHeight: "19px",
+    body1: {
+      fontSize: "14px",
+      fontWeight: "400",
+      lineHeight: "25px",
     },
     lightText: {
       fontSize: "13px",

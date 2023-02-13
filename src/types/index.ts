@@ -16,3 +16,12 @@ export interface ITrendingCard {
   rating: string;
   isBookMarked: boolean;
 }
+
+export interface IPlanetCard {
+  feature: string;
+  value: string;
+}
+export interface IDialogProps {
+  isOpen: boolean;
+  onClose: () => void;
+}
