@@ -32,7 +32,7 @@ const tabs = [
   },
 ];
 
-const MercuryPage = () => {
+const HomePage = () => {
   const { planet = "" } = useParams();
   const planetDetails = db.filter((item) =>
     item.name.toLowerCase().includes(planet)
@@ -60,6 +60,7 @@ const MercuryPage = () => {
       >
         {tabs.map((el, idx) => (
           <Box
+            key={nanoid()}
             py={["20px"]}
             position="relative"
             onClick={() => setTabIndex(idx)}
@@ -190,7 +191,7 @@ const MercuryPage = () => {
         flexDirection={["column", "column", "row"]}
         justify={["space-between"]}
         justifyContent={[""]}
-        mt={["28px", "28px", "0"]}
+        mt={["28px", "28px", "72px", "0px", "0px"]}
       >
         <PlanetCard feature="ROTATION TIME" value={planetDetails.rotation} />
         <PlanetCard
@@ -204,4 +205,4 @@ const MercuryPage = () => {
   );
 };
 
-export default MercuryPage;
+export default HomePage;
